@@ -1,101 +1,121 @@
+
 import Image from "next/image";
+import Link from "next/link"; 
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    return (
+        <div className="min-h-screen bg-gradient-to-r from-gray-900 to-gray-700 py-12 px-4">
+            <h1 className="text-center text-white text-4xl font-bold mb-10">Exploring the World of Anime</h1>
+            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Anime Card 1 */}
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out hover:bg-gray-700">
+                    <img
+                        src="/images/naruto.jpg"
+                        alt="Naruto"
+                        className="w-full h-40 object-cover rounded-lg mb-4"
+                    />
+                    <h2 className="text-xl font-semibold text-white">Naruto</h2>
+                    <p className="text-gray-300 mt-2">
+                        Naruto is a Japanese anime series based on the manga by Masashi Kishimoto, first aired in 2002.
+                    </p>
+                    <Link href="/naruto">
+                        <button className="mt-4 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
+                            Read More
+                        </button>
+                    </Link>
+                </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+                {/* Anime Card 2 */}
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out hover:bg-gray-700">
+                    <img
+                        src="/images/onepiece.jpg"
+                        alt="One Piece"
+                        className="w-full h-40 object-cover rounded-lg mb-4"
+                    />
+                    <h2 className="text-xl font-semibold text-white">One Piece</h2>
+                    <p className="text-gray-300 mt-2">
+                        One Piece is a long-running anime series based on the manga by Eiichiro Oda, first aired in 1999.
+                    </p>
+                    <Link href={"/onepiece"}>
+                        <button className="mt-4 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
+                            Read More
+                        </button>
+                    </Link>
+                </div>
+
+                {/* Anime Card 3 */}
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out hover:bg-gray-700">
+                    <img
+                        src="/images/attackontitan.jpeg"
+                        alt="Attack on Titan"
+                        className="w-full h-40 object-cover rounded-lg mb-4"
+                    />
+                    <h2 className="text-xl font-semibold text-white">Attack on Titan</h2>
+                    <p className="text-gray-300 mt-2">
+                        Attack on Titan is a popular anime based on the manga by Hajime Isayama, first aired in 2013.
+                    </p>
+                    <Link href={"/attackontitan"}>
+                        <button className="mt-4 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
+                            Read More
+                        </button>
+                    </Link>
+                </div>
+
+                {/* Anime Card 4 */}
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out hover:bg-gray-700">
+                    <img
+                        src="/images/demonslayer.jpg"
+                        alt="Demon Slayer"
+                        className="w-full h-40 object-cover rounded-lg mb-4"
+                    />
+                    <h2 className="text-xl font-semibold text-white">Demon Slayer</h2>
+                    <p className="text-gray-300 mt-2">
+                        Demon Slayer is a recent hit anime based on the manga by Koyoharu Gotouge, first aired in 2019.
+                    </p>
+                    <Link href={"/demonslayer"}>
+                        <button className="mt-4 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
+                            Read More
+                        </button>
+                    </Link>
+                </div>
+
+                {/* Anime Card 5 */}
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out hover:bg-gray-700">
+                    <img
+                        src="/images/myheroacademia.jpg"
+                        alt="My Hero Academia"
+                        className="w-full h-40 object-cover rounded-lg mb-4"
+                    />
+                    <h2 className="text-xl font-semibold text-white">My Hero Academia</h2>
+                    <p className="text-gray-300 mt-2">
+                        My Hero Academia is a Japanese anime based on the manga by Kōhei Horikoshi, first aired in 2016.
+                    </p>
+                    <Link href={"/myheroacademia"}>
+                        <button className="mt-4 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
+                            Read More
+                        </button>
+                    </Link>
+                </div>
+
+                {/* Anime Card 6 */}
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out hover:bg-gray-700">
+                    <img
+                        src="/images/dragonballz.jpg"
+                        alt="Dragon Ball Z"
+                        className="w-full h-40 object-cover rounded-lg mb-4"
+                    />
+                    <h2 className="text-xl font-semibold text-white">Dragon Ball Z</h2>
+                    <p className="text-gray-300 mt-2">
+                        Dragon Ball Z is a classic anime series created by Akira Toriyama, first aired in 1989.
+                    </p>
+                    <Link href={"/dragonballz"}>
+                        <button className="mt-4 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
+                            Read More
+                        </button>
+                    </Link>
+                </div>
+            </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
+
