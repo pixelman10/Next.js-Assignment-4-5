@@ -12,19 +12,21 @@ export default function MyHeroAcademia() {
                     src={myheroacademiaphoto}
                     alt="My Hero Academia"
                     className="w-full h-60 object-cover rounded-lg mb-4"
-                />
+                />                                   
+                 <p className="text-gray-300 text-lg mb-4">
+                *My Hero Academia* is a Japanese anime based on the manga by Kōhei Horikoshi, first aired in 2016.
+                 </p>
                 <p className="text-gray-300 text-lg mb-4">
-                    *My Hero Academia* is a Japanese anime based on the manga by Kōhei Horikoshi, first aired in 2016.
+                The series is set in a world where nearly everyone has superpowers, known as &quot;Quirks.&quot; It follows Izuku Midoriya, a Quirkless boy who dreams of becoming a hero. Despite his lack of powers, Izuku inherits the powerful Quirk &quot;One For All&quot; and trains to become the greatest hero.
                 </p>
                 <p className="text-gray-300 text-lg mb-4">
-                    The series is set in a world where nearly everyone has superpowers, known as "Quirks." It follows Izuku Midoriya, a Quirkless boy who dreams of becoming a hero. Despite his lack of powers, Izuku inherits the powerful Quirk "One For All" and trains to become the greatest hero.
+                *My Hero Academia* explores themes of heroism, friendship, and the challenges of self-discovery. With intense action, dynamic characters, and emotional depth, the series has become a major hit in the anime world.
                 </p>
                 <p className="text-gray-300 text-lg mb-4">
-                    *My Hero Academia* explores themes of heroism, friendship, and the challenges of self-discovery. With intense action, dynamic characters, and emotional depth, the series has become a major hit in the anime world.
+                The journey of Izuku and his classmates at U.A. High School is filled with struggles, victories, and emotional moments, making *My Hero Academia* a must-watch for fans of the superhero genre.
                 </p>
-                <p className="text-gray-300 text-lg mb-4">
-                    The journey of Izuku and his classmates at U.A. High School is filled with struggles, victories, and emotional moments, making *My Hero Academia* a must-watch for fans of the superhero genre.
-                </p>
+
+                
                 <Link href={"https://www.crunchyroll.com/my-hero-academia"} target="_blank" rel="noopener noreferrer">
                     <button className="mt-4 px-6 py-3 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
                         Watch Now
