@@ -1,10 +1,14 @@
+import Image from "next/image";
+import demonslayerphoto from "../../../public/images/demonslayer.jpg"
+
+
 export default function DemonSlayer() {
     return (
         <div className="min-h-screen bg-gradient-to-r from-gray-900 to-gray-700 p-6">
             <div className="max-w-3xl mx-auto bg-gray-800 rounded-lg shadow-lg p-6">
                 <h1 className="text-4xl text-white font-bold text-center mb-4">Demon Slayer</h1>
-                <img
-                    src="/images/demonslayer.jpg"
+                <Image
+                    src={demonslayerphoto}
                     alt="Demon Slayer"
                     className="w-full h-60 object-cover rounded-lg mb-4"
                 />

@@ -2,6 +2,16 @@
 import Image from "next/image";
 import Link from "next/link"; 
 
+import narutophoto from "../../public/images/Naruto.jpg"
+import onepiecephoto from "../../public/images/onepiece.jpg"
+import attackontitanphoto from "../../public/images/attackontitan.jpeg"
+import demonslayerphoto from "../../public/images/demonslayer.jpg"
+import myheroacademiaphoto from "../../public/images/myheroacademia.jpg"
+import dragonballzphoto from "../../public/images/dragonballz.jpg"
+
+
+
+
 export default function Home() {
     return (
         <div className="min-h-screen bg-gradient-to-r from-gray-900 to-gray-700 py-12 px-4">
@@ -9,10 +19,11 @@ export default function Home() {
             <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/* Anime Card 1 */}
                 <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out hover:bg-gray-700">
-                    <img
-                        src="/images/naruto.jpg"
+                    <Image 
+                        src={narutophoto}
                         alt="Naruto"
                         className="w-full h-40 object-cover rounded-lg mb-4"
+                        
                     />
                     <h2 className="text-xl font-semibold text-white">Naruto</h2>
                     <p className="text-gray-300 mt-2">
@@ -27,10 +38,11 @@ export default function Home() {
 
                 {/* Anime Card 2 */}
                 <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out hover:bg-gray-700">
-                    <img
-                        src="/images/onepiece.jpg"
+                    <Image
+                        src={onepiecephoto}
                         alt="One Piece"
                         className="w-full h-40 object-cover rounded-lg mb-4"
+
                     />
                     <h2 className="text-xl font-semibold text-white">One Piece</h2>
                     <p className="text-gray-300 mt-2">
@@ -45,10 +57,11 @@ export default function Home() {
 
                 {/* Anime Card 3 */}
                 <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out hover:bg-gray-700">
-                    <img
-                        src="/images/attackontitan.jpeg"
+                    <Image
+                        src={attackontitanphoto}
                         alt="Attack on Titan"
                         className="w-full h-40 object-cover rounded-lg mb-4"
+                        
                     />
                     <h2 className="text-xl font-semibold text-white">Attack on Titan</h2>
                     <p className="text-gray-300 mt-2">
@@ -63,10 +76,11 @@ export default function Home() {
 
                 {/* Anime Card 4 */}
                 <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out hover:bg-gray-700">
-                    <img
-                        src="/images/demonslayer.jpg"
+                    <Image
+                        src={demonslayerphoto}
                         alt="Demon Slayer"
                         className="w-full h-40 object-cover rounded-lg mb-4"
+                        
                     />
                     <h2 className="text-xl font-semibold text-white">Demon Slayer</h2>
                     <p className="text-gray-300 mt-2">
@@ -81,10 +95,11 @@ export default function Home() {
 
                 {/* Anime Card 5 */}
                 <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out hover:bg-gray-700">
-                    <img
-                        src="/images/myheroacademia.jpg"
+                    <Image
+                        src={myheroacademiaphoto}
                         alt="My Hero Academia"
                         className="w-full h-40 object-cover rounded-lg mb-4"
+                        
                     />
                     <h2 className="text-xl font-semibold text-white">My Hero Academia</h2>
                     <p className="text-gray-300 mt-2">
@@ -99,10 +114,11 @@ export default function Home() {
 
                 {/* Anime Card 6 */}
                 <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out hover:bg-gray-700">
-                    <img
-                        src="/images/dragonballz.jpg"
+                    <Image
+                        src={dragonballzphoto}
                         alt="Dragon Ball Z"
                         className="w-full h-40 object-cover rounded-lg mb-4"
+                        
                     />
                     <h2 className="text-xl font-semibold text-white">Dragon Ball Z</h2>
                     <p className="text-gray-300 mt-2">
