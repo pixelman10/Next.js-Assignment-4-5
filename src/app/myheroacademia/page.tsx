@@ -1,5 +1,6 @@
 import Image from "next/image";
 import myheroacademiaphoto from "../../../public/images/myheroacademia.jpg"
+import Link from "next/link"; 
 
 
 export default function MyHeroAcademia() {
@@ -24,11 +25,11 @@ export default function MyHeroAcademia() {
                 <p className="text-gray-300 text-lg mb-4">
                     The journey of Izuku and his classmates at U.A. High School is filled with struggles, victories, and emotional moments, making *My Hero Academia* a must-watch for fans of the superhero genre.
                 </p>
-                <a href="https://www.crunchyroll.com/my-hero-academia" target="_blank" rel="noopener noreferrer">
+                <Link href={"https://www.crunchyroll.com/my-hero-academia"} target="_blank" rel="noopener noreferrer">
                     <button className="mt-4 px-6 py-3 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
                         Watch Now
                     </button>
-                </a>
+                </Link>
             </div>
         </div>
     );

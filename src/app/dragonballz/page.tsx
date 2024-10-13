@@ -1,5 +1,6 @@
 import Image from "next/image";
 import dragonballzphoto from "../../../public/images/dragonballz.jpg"
+import Link from "next/link"; 
 
 export default function DragonBallZ() {
     return (
@@ -23,11 +24,11 @@ export default function DragonBallZ() {
                 <p className="text-gray-300 text-lg mb-4">
                     *Dragon Ball Z* remains a cultural icon, inspiring generations of anime fans and leading to several sequel series and films.
                 </p>
-                <a href="https://www.crunchyroll.com/dragon-ball-z" target="_blank" rel="noopener noreferrer">
+                <Link href={"https://www.crunchyroll.com/dragon-ball-z"} target="_blank" rel="noopener noreferrer">
                     <button className="mt-4 px-6 py-3 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
                         Watch Now
                     </button>
-                </a>
+                </Link>
             </div>
         </div>
     );

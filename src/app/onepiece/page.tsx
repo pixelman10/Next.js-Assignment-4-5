@@ -1,5 +1,7 @@
 import Image from "next/image";
 import onepiecephoto from "../../../public/images/onepiece.jpg"
+import Link from "next/link"; 
+
 
 export default function OnePiece() {
     return (
@@ -23,11 +25,11 @@ export default function OnePiece() {
                 <p className="text-gray-300 text-lg mb-4">
                     One Piece is known for its epic world-building, emotional storytelling, and unforgettable characters, making it one of the most popular and longest-running anime series in history.
                 </p>
-                <a href="https://www.crunchyroll.com/one-piece" target="_blank" rel="noopener noreferrer">
+                <Link href={"https://www.crunchyroll.com/one-piece"} target="_blank" rel="noopener noreferrer">
                     <button className="mt-4 px-6 py-3 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
                         Watch Now
                     </button>
-                </a>
+                </Link>
             </div>
         </div>
     );

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import narutophoto from "../../../public/images/Naruto.jpg"
+import Link from "next/link"; 
 
 export default function Naruto() {
     return (
@@ -23,11 +24,11 @@ export default function Naruto() {
                 <p className="text-gray-300 text-lg mb-4">
                     With its engaging characters and compelling storyline, Naruto has become a beloved classic in the world of anime and continues to capture the hearts of fans around the globe.
                 </p>
-                <a href="https://www.crunchyroll.com/naruto" target="_blank" rel="noopener noreferrer">
+                <Link href={"https://www.crunchyroll.com/naruto"} target="_blank" rel="noopener noreferrer">
                     <button className="mt-4 px-6 py-3 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
                         Watch Now
                     </button>
-                </a>
+                </Link>
             </div>
         </div>
     );

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import demonslayerphoto from "../../../public/images/demonslayer.jpg"
+import Link from "next/link"; 
 
 
 export default function DemonSlayer() {
@@ -24,11 +25,11 @@ export default function DemonSlayer() {
                 <p className="text-gray-300 text-lg mb-4">
                     The stunning action sequences and powerful character development make *Demon Slayer* a standout in the world of anime, and it continues to grow in popularity with each passing season.
                 </p>
-                <a href="https://www.crunchyroll.com/demon-slayer-kimetsu-no-yaiba" target="_blank" rel="noopener noreferrer">
+                <Link href={"https://www.crunchyroll.com/demon-slayer-kimetsu-no-yaiba"} target="_blank" rel="noopener noreferrer">
                     <button className="mt-4 px-6 py-3 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
                         Watch Now
                     </button>
-                </a>
+                </Link>
             </div>
         </div>
     );

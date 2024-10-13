@@ -1,5 +1,6 @@
 import Image from "next/image";
 import attackontitanphoto from "../../../public/images/attackontitan.jpeg"
+import Link from "next/link"; 
 
 
 export default function AttackOnTitan() {
@@ -24,11 +25,11 @@ export default function AttackOnTitan() {
                 <p className="text-gray-300 text-lg mb-4">
                     Known for its breathtaking action sequences, intricate storytelling, and thought-provoking themes, Attack on Titan has become a cultural phenomenon in the world of anime.
                 </p>
-                <a href="https://www.crunchyroll.com/attack-on-titan" target="_blank" rel="noopener noreferrer">
+                <Link href={"https://www.crunchyroll.com/attack-on-titan"} target="_blank" rel="noopener noreferrer">
                     <button className="mt-4 px-6 py-3 bg-purple-600 text-white rounded hover:bg-purple-500 transition-colors">
                         Watch Now
                     </button>
-                </a>
+                </Link>
             </div>
         </div>
     );
